@@ -1,16 +1,10 @@
 /* Page */
 
-.page,
-.page__body {
-    height: 100%;
-}
-
 .page {
-    background-color: var(--beige);
+    line-height: 1.5;
+    font-family: 'Dewi', sans-serif;
 }
 
 .page__body {
     margin: 0;
-    display: grid;
-    place-items: center;
 }
