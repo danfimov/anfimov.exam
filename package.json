@@ -9,13 +9,20 @@
     "deploy": "cd dist && rsync --archive --compress --delete . pepelsbey@pepelsbey.dev:/var/www/pepelsbey.dev/html/",
     "gulpfile": "gulp"
   },
-  "devDependencies": {
-    "browser-sync": "^2.26.12",
-    "editorconfig-checker": "^3.1.0",
-    "html-minifier": "^4.0.0",
-    "postcss-cli": "^7.1.2",
+  "devDependencies":{
+    "@babel/core": "^7.10.2",
+    "@babel/preset-env": "^7.10.2",
+    "autoprefixer": "^9.8.0",
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-replace": "^1.0.0",
+    "gulp-terser": "^1.2.0",
     "postcss-csso": "^4.0.0",
-    "postcss-import": "^12.0.1"
+    "postcss-import": "^12.0.1",
+    "postcss-media-minmax": "^4.0.0"
   },
   "dependencies": {
     "gulp": "^4.0.2",
