@@ -14,6 +14,14 @@
     height: 44px;
 }
 
+@media (min-width: 1200px) {
+    .logo__image {
+        width: 56px;
+        height: 64px;
+    }
+}
+
+
 @media (min-width: 737px) {
     .logo__image {
         grid-row: span 2;
@@ -27,6 +35,13 @@
     letter-spacing: -0.03em;
     font-weight: bold;
     font-size: 20px;
+}
+
+@media (min-width: 1200px){
+    .logo__title {
+        align-self: center;
+        font-size: 48px;
+    }
 }
 
 @media (max-width: 736px) {
@@ -49,6 +64,13 @@
     letter-spacing: 0.05em;
     text-transform: uppercase;
     font-size: 12px;
+}
+
+@media (min-width: 1200px){
+    .logo__tagline {
+        margin-top: 5px;
+        font-size: 14px;
+    }
 }
 
 @media (max-width: 736px) {
