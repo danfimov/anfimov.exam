@@ -33,11 +33,11 @@
 @media (width <= 736px) {
     .menu__icon {
         display: block;
-        stroke: var(--basic-black);
+        stroke: var(--color-black);
     }
 
     .menu__icon:hover {
-        stroke: var(--special-neutral);
+        stroke: var(--color-grey);
     }
 
     .menu__icon-menu,
@@ -67,8 +67,8 @@
         padding-top: 12px;
         padding-bottom: 22px;
         padding-left: 64px;
-        box-shadow: 0 50vh 0 50vh var(--special-dark-10a);
-        background-color: var(--basic-white);
+        box-shadow: 0 50vh 0 50vh var(--color-grey-light-10a);
+        background-color: var(--color-white);
     }
 
     .menu__list--open {
@@ -94,22 +94,22 @@
 /* Link */
 
 .menu__link {
-    color: var(--special-dark);
+    color: var(--color-black);
 }
 
 .menu__link[href]:hover {
-    color: var(--special-neutral);
+    color: var(--color-link-active);
 }
 
 .menu__link--current {
-    color: var(--basic-black);
+    color: var(--color-black);
     text-decoration: none;
     font-weight: bold;
     font-family: 'Dewi Expanded', sans-serif;
 }
 
 .menu__link--inactive {
-    color: var(--basic-semi-light);
+    color: var(--color-grey);
 }
 
 .menu__link--patreon {
@@ -122,7 +122,7 @@
     margin-left: -18px;
     width: 16px;
     height: 16px;
-    content: url('../../images/patreon.svg');
+    content: url("../../images/patreon.svg");
 }
 
 @media (width <= 736px) {
