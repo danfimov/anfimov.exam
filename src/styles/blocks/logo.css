@@ -14,7 +14,7 @@
     height: 44px;
 }
 
-@media (width > 736px) {
+@media (min-width: 737px) {
     .logo__image {
         grid-row: span 2;
     }
@@ -29,13 +29,13 @@
     font-size: 20px;
 }
 
-@media (width <= 736px) {
+@media (max-width: 736px) {
     .logo__title {
         align-self: center;
     }
 }
 
-@media (width > 736px) {
+@media (min-width: 737px) {
     .logo__title {
         align-self: end;
     }
@@ -51,13 +51,13 @@
     font-size: 12px;
 }
 
-@media (width <= 736px) {
+@media (max-width: 736px) {
     .logo__tagline {
         display: none;
     }
 }
 
-@media (width > 736px) {
+@media (min-width: 737px) {
     .logo__tagline {
         align-self: center;
     }
