@@ -6,7 +6,7 @@
     "html": "html-minifier --remove-comments --collapse-whitespace --input-dir src --output-dir dist --file-ext html",
     "styles": "postcss src/styles/index.css --use postcss-import --use postcss-url --use postcss-csso --no-map --output dist/styles/index.css",
     "build": "npm run html && npm run styles",
-    "deploy": "cd dist && rsync --archive --compress --delete . pepelsbey@pepelsbey.dev:/var/www/pepelsbey.dev/html/",
+    "deploy": "git add . && git commit -m 'Делает очередную глупость' && git push https://github.com/LoveSolaristics/anfimov.exam.git master",
     "gulpfile": "gulp"
   },
   "devDependencies": {
