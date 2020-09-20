@@ -1,0 +1,20 @@
+/* Main */
+
+
+@media (min-width: 304px){
+    .main {
+        padding: 0 16px 16px;
+    }
+}
+
+@media (min-width: 736px){
+    .main {
+        padding: 64px 24px 64px;
+    }
+}
+
+@media (min-width: 1008px){
+    .main {
+        padding: 90px 32px 90px;
+    }
+}
