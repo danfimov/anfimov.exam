@@ -1,6 +1,7 @@
 /* Menu */
 .menu{
     grid-column: 3/4;
+    z-index: 1000;
 }
 
 
@@ -37,11 +38,11 @@
 @media (max-width: 736px) {
     .menu__icon {
         display: block;
-        stroke: var(--color-black);
+        stroke: var(--basic-black);
     }
 
     .menu__icon:hover {
-        stroke: var(--color-grey);
+        stroke: var(--basic-semi-light);
     }
 
     .menu__icon-menu,
@@ -77,8 +78,8 @@
         padding-top: 12px;
         padding-bottom: 22px;
         padding-left: 64px;
-        box-shadow: 0 50vh 0 50vh var(--color-grey-10a);
-        background-color: var(--color-white);
+        box-shadow: 0 50vh 0 50vh var(--special-neutral-10a);
+        background-color: var(--basic-white);
     }
 
     .menu__list--open {
@@ -116,15 +117,15 @@
 /* Link */
 
 .menu__link {
-    color: var(--color-black);
+    color: var(--special-dark);
 }
 
 .menu__link[href]:hover {
-    color: var(--color-link-active);
+    color: var(--special-neutral);
 }
 
 .menu__link--current {
-    color: var(--color-black);
+    color: var(--basic-black);
     text-decoration: none;
     font-weight: bold;
     line-height: 1.3;
@@ -133,7 +134,7 @@
 }
 
 .menu__link--inactive {
-    color: var(--color-grey);
+    color: var(--basic-semi-light);
 }
 
 .menu__link--patreon {

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+<head>
+    <title>Анфимов.exam</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="shortcut icon" href="images/favicon.png">
+</head>
+<body class="page__body ">
+    <header class="header">
+        <div class="header__logo logo">
+            <img class="logo__image" src="images/logo.png" width="40" height="44" alt="">
+            <p class="logo__title">Анфимов.exam</p>
+            <p class="logo__tagline">Твой репетитор</p>
+        </div>
+        <nav class="header__menu menu">
+            <button class="menu__button" type="button" aria-expanded="false" aria-controls="menu__list">
+                <svg class="menu__icon" aria-hidden="true" width="32" height="32">
+                    <use class="menu__icon-menu" href="images/sprite_button.svg#menu"></use>
+                    <use class="menu__icon-cross" href="images/sprite_button.svg#cross"></use>
+                </svg>
+            </button>
+            <ul class="menu__list" id="menu__list">
+                <li class="menu__item">
+                    <a class="menu__link menu__link--current" href>Уроки</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link menu__link--inactive">Задания</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link menu__link--inactive">Учебник</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link menu__link--inactive">О проекте</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link menu__link--patreon" href>Поддержать</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <section class="content">
+            <h1>Сте&shy;ре&shy;о&shy;мет&shy;рия - часть 1. Ак&shy;си&shy;омы сте&shy;ре&shy;о&shy;мет&shy;рии</h1>
+            <p>Эта статья является частью цикла статей о стереометрии</p>
+            <p>Ссылки на другие части:</p>
+            <ol>
+                <li class='chapter_current'>Вы здесь;</li>
+                <li><a href="">Стереометрия - часть 2. Величины геометрических тел;</a></li>
+                <li><a href="">Стереометрия - часть 3. Взаимное расположение точек, прямых, плоскостей.</a></li>
+            </ol>
+
+            <h2>Введение</h2>
+            <p>До этого момента в школьном курсе вы рассматривали лишь планиметрию: плоские фигуры с различным их расположениями по осям <span class="code">X</span> и <span class="code">Y</span>.  А теперь ко всему этому добавляется третье измерение и ось <span class="code">Z</span>…</p>
+            <p>Сухим языком математики: стереометрия изучает фигуры и их свойства в пространстве. Образно говоря, стереометрия рассматривает всё, что можно склеить из бумаги, сколотить из досок, построить из кирпичей и т. п.</p>
+            <p>Основными объектами стереометрии являются точки, прямые, плоскости и замкнутые пространственные фигуры (например: куб, пирамида, параллелепипед, шар, конус). </p>
+            <p>Множество всех точек, рассматриваемых в стереометрии, называется <span class="term">пространством</span>. Любое множество точек называется <span class="term">фигурой</span>. <span class="term">Замкнутая фигура в стереометрии</span> — это множество точек, ограниченных поверхностью.</p>
+
+            <h3>Пример</h3>
+            <p>На анимированных иллюстрациях наглядно показаны связь и различие плоских и пространственных фигур.</p>
+            <img src="images/1.gif" alt="треугольник превращается в конус" class="vertical_image">
+            <img src="images/2.gif" alt="квадрат превращается в куб" class="vertical_image">
+            <p>Так как каждая прямая и каждая плоскость содержат какие-либо точки, то прямая и плоскость тоже являются фигурами стереометрии.
+                    Плоскость бесконечна и делит пространство на две части.</p>
+
+            <h2>Договоримся об обозначениях</h2>
+            <p>Точки обозначаются прописными латинскими буквами: <span class="code">𝐴,𝐵,𝐶,𝐷,𝐸,𝐹</span> …
+                    Прямые обозначаются строчными латинскими буквами:  <span class="code">𝑎,𝑏,𝑐,𝑑,𝑒,𝑓</span>…
+                    Плоскости обозначаются греческими буквами: <span class="code">α,β,γ</span>   и т. д.</p>
+
+            <h2>Аксиомы стереометрии</h2>
+            <p>В основе каждого курса геометрии лежат <span class="term">аксиомы</span> — утверждения, которые принимаются без доказательств. С помощью этих утверждений определяются остальные объекты и их свойства.</p>
+            <p>В Евклидовой геометрии основные свойства точки, прямой и плоскости, которые относятся к их взаимному расположению, выражены в 20 аксиомах. Сформулируем три основные.</p>
+
+            <h3>Аксиома</h3>
+            <p>Через любые три точки, которые не лежат на одной прямой, можно провести только одну плоскость.</p>
+            <img src="images/4.gif" alt="Иллюстрация к аксиоме" class="horizontal_image">
+
+            <h3>Аксиома</h3>
+            <p>Если две точки прямой принадлежат плоскости, то все точки этой прямой принадлежат плоскости.</p>
+            <img src="images/5.gif" alt="Иллюстрация к аксиоме" class="horizontal_image">
+
+            <h3>Аксиома</h3>
+            <p>Если две различные плоскости имеют общую точку, то они пересекаются по прямой, проходящей через эту точку.</p>
+            <img src="images/6.gif" alt="Иллюстрация к аксиоме" class="horizontal_image">
+
+            <p>Есть и другие аксиомы, но они не столь важны для наших дальнейших рассуждений.</p>
+            <p>Можете проверить, как материал уложился в голове, и приступать ко <a>второй части</a>, где мы поговорим об основных характеристиках пространственных фигур и даже научимся решать несколько задач из ЕГЭ.</p>
+
+
+            <div class="slider">
+                <div class="slider__wrapper">
+                  <div class="slider__items">
+                    <div class="slider__item">
+                        <div class='question_slide'>
+                            <p class="question">Перечислите основные объекты стереометрии</p>
+                            <details close>
+                                <summary>Увидеть ответ</summary>
+                                <p class='answer'>Основными объектами стереометрии являются точки, прямые, плоскости и замкнутые пространственные фигуры (например: куб, пирамида, параллелепипед, шар, конус)</p>
+                            </spoiler>
+                        </div>
+                    </div>
+                    <div class="slider__item">
+                        <div class='question_slide'>
+                            <p class="question">Какими буквами следует обозначать точки на рисунках? Прямые? Плоскости?</p>
+                            <details close>
+                                <summary>Увидеть ответ</summary>
+                                <p class='answer'>Точки обозначаются прописными латинскими буквами: <span class="code">𝐴,𝐵,𝐶,𝐷,𝐸,𝐹</span> …
+                                    Прямые обозначаются строчными латинскими буквами:  <span class="code">𝑎,𝑏,𝑐,𝑑,𝑒,𝑓</span>…
+                                    Плоскости обозначаются греческими буквами: <span class="code">α,β,γ</span>   и т. д.</p>
+                            </spoiler>
+                        </div>
+                    </div>
+                    <div class="slider__item">
+                        <div class='question_slide'>
+                            <p class="question">Определение <span class='term'>замкнутой фигуры</span> в стереометрии</p>
+                            <details close>
+                                <summary>Увидеть ответ</summary>
+                                <p class='answer'><span class="term">Замкнутая фигура</span>  в стереометрии — это множество точек, ограниченных поверхностью. Это может быть, например, шар или цилиндр.</p>
+                            </spoiler>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <a class="slider__control slider__control_prev" href="#" role="button"></a>
+                <a class="slider__control slider__control_next" href="#" role="button"></a>
+            </div>
+
+        </section>
+        <section class='read-also'>
+            <h2 class="read-also__header">Еще</h2>
+            <ul class="articles__list">
+                <li class="articles__item">
+                    <img alt="Фото автора" src="images/autor_dima.png" class="article__autor__image">
+                    <h2 class="article__title">Основы теории вероятностей</h2>
+                    <p class="article__meta">
+                        <span class="article__date">21 сентября</span>
+                        <span class="article__autor">Дима Анфимов</span>
+                    </p>
+                </li>
+                <li class="articles__item"  onclick="location.href='lessons/1/index.html';">
+                    <img alt="Фото автора" src="images/autor_dima.png" class="article__autor__image">
+                    <h2 class="article__title">Стереометрия - часть 2. Величины геометрических тел</h2>
+                    <p class="article__meta">
+                        <span class="article__date">20 сентября</span>
+                        <span class="article__autor">Дима Анфимов</span>
+                    </p>
+                </li>
+                <li class="articles__item">
+                    <img alt="Фото автора" src="images/autor_dima.png" class="article__autor__image">
+                    <h2 class="article__title">Стереометрия - часть 3. Взаимное расположение точек, прямых, плоскостей.</h2>
+                    <p class="article__meta">
+                        <span class="article__date">21 сентября</span>
+                        <span class="article__autor">Дима Анфимов</span>
+                    </p>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <section class="social">
+            <h2 class="social__header">На связи</h2>
+            <dl class="social__list">
+                <div class="social__item">
+                    <dt class="social__title">Новости и события</dt>
+                    <dd class="social__description">
+                        <a class="social__link" href="https://vk.com/lovesolaristics" aria-label="ВКонтакте">
+                            <svg class="social__icon" aria-hidden="true" width="32" height="32">
+                                <use href="images/sprite.svg#vk"></use>
+                            </svg>
+                        </a>
+                        <a class="social__link" href="https://t.me/anfimov_work" aria-label="Телеграм">
+                            <svg class="social__icon" aria-hidden="true" width="32" height="32">
+                                <use href="images/sprite.svg#telegram"></use>
+                            </svg>
+                        </a>
+                    </dd>
+                </div>
+                <div class="social__item">
+                    <dt class="social__title">Общение и код проектов</dt>
+                    <dd class="social__description">
+                        <a class="social__link" href="https://github.com/LoveSolaristics" aria-label="Слак">
+                            <svg class="social__icon" aria-hidden="true" width="32" height="32">
+                                <use href="images/sprite.svg#slack"></use>
+                            </svg>
+                        </a>
+                        <a class="social__link" href="https://github.com/LoveSolaristics" aria-label="Гитхаб">
+                            <svg class="social__icon" aria-hidden="true" width="32" height="32">
+                                <use href="images/sprite.svg#github"></use>
+                            </svg>
+                        </a>
+                    </dd>
+                </div>
+            </dl>
+        </section>
+        <section class="footer">
+            <h2 class="footer__header">О сайте</h2>
+            <ul class="footer__list">
+                <li class="footer__item">
+                    <a class="footer__link" href>Уроки</a>
+                </li>
+                <li class="footer__item">
+                    <a class="footer__link">Задания</a></li>
+                <li class="footer__item">
+                    <a class="footer__link">Учебник</a>
+                </li>
+                <li class="footer__item">
+                    <a class="footer__link">О проекте</a>
+                </li>
+                <li class="footer__item">
+                    <a class="footer__link" href>Поддержать</a>
+                </li>
+            </ul>
+            <p class="footer__design">
+                Дизайн сайта:
+                <a href class="footer__link">Юлиана Чепракова</a>
+            </p>
+            <p class="footer__copy">
+                Анфимов.exam,
+                <time class="footer__years" datetime="2020">2020</time>
+            </p>
+        </section>
+    </footer>
+    <script src="scripts/slider.js"></script>
+    <script src="scripts/test_1.js"></script>
+</body>
+</html>

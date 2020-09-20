@@ -3,8 +3,8 @@
 .footer {
     display: grid;
     gap: 16px;
-    background-color: var(--color-grey-light);
-    color: var(--color-black);
+    background-color: var(--basic-dark);
+    color: var(--basic-white);
 }
 
 @media (max-width: 735px) {
@@ -106,7 +106,7 @@
 /* Link */
 
 .footer__link[href] {
-    color: var(--color-link-blue);
+    color: var(--special-dark);
 }
 
 .footer__link:focus {

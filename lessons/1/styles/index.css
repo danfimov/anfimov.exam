@@ -15,10 +15,21 @@
 @import 'blocks/menu.css';
 
 @import 'blocks/main.css';
+@import 'blocks/article.css';
+@import 'blocks/read_also.css';
+@import 'blocks/slider.css';
 
-@import 'blocks/articles.css';
 
 @import 'blocks/footer.css';
 @import 'blocks/social.css';
+
+/* @media (min-width: 737px) {
+}
+
+@media (min-width: 1024px){
+}
+
+@media (min-width: 1440px){
+} */
 
 
