@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+<head>
+    <title>Анфимов.exam</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="shortcut icon" href="images/favicon.png">
+</head>
+<body class="page__body ">
+    <header class="header">
+        <div class="header__logo logo"   onclick="location.href='../../index.html';">
+            <img class="logo__image" src="images/logo.png" width="40" height="44" alt="">
+            <p class="logo__title">Анфимов.exam</p>
+            <p class="logo__tagline">Твой репетитор</p>
+        </div>
+        <nav class="header__menu menu">
+            <button class="menu__button" type="button" aria-expanded="false" aria-controls="menu__list">
+                <svg class="menu__icon" aria-hidden="true" width="32" height="32">
+                    <use class="menu__icon-menu" href="images/sprite_button.svg#menu"></use>
+                    <use class="menu__icon-cross" href="images/sprite_button.svg#cross"></use>
+                </svg>
+            </button>
+            <ul class="menu__list" id="menu__list">
+                <li class="menu__item">
+                    <a class="menu__link menu__link--current" href>Уроки</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link menu__link--inactive">Задания</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link menu__link--inactive">Учебник</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link menu__link--inactive">О проекте</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link menu__link--patreon" href>Поддержать</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <section class="content">
+            <h1>Сте&shy;ре&shy;о&shy;мет&shy;рия - часть 2. Величины гео&shy;мет&shy;ричес&shy;ких тел</h1>
+            <p>Эта статья является частью цикла статей о стереометрии</p>
+            <p>Ссылки на другие части:</p>
+            <ol>
+                <li><a href="../1/index.html">Стереометрия - часть 1. Аксиомы стереометрии;</a></li>
+                <li class='chapter_current'>Вы здесь;</li>
+                <li><a href="../3/index.html">Стереометрия - часть 3. Взаимное расположение точек, прямых, плоскостей.</a></li>
+                <li>Comming soon</li>
+            </ol>
+
+
+        <h2>Объёмная фигура и геометрическое тело</h2>
+        <p>Отвлечемся немного от аксиом с теоремами. У нас тут в углу комнаты стоит никак не обговоренный слоник: объемные фигуры и геометрические тела. </p>
+        <p>Договоримся об определениях:
+            Фигура, все точки которой не находятся на одной плоскости, называется объёмной фигурой.
+            Ограниченная часть пространства называется геометрическим телом, а множество точек, ограничивающих его от окружающего пространства, называется поверхностью этого тела.</p>
+        <h3>Пример</h3>
+        <ol>
+            <li>Шар — геометрическое тело, его поверхность — сфера;</li>
+            <li>Винтовая линия — объёмная фигура, но это не тело;</li>
+            <li>Пирамида — геометрическое тело, которое ограничено плоскими многоугольниками.</li>
+        </ol>
+        <h2>Величины геометрических тел: объем.</h3>
+        <p>Главная величина геометрических тел — это их объём. <span class="term">Объём геометрического тела</span>  — это величина, которая описывает занимающую этим телом часть пространства.</p>
+        <p>Из определения следует, что объём не зависит ни от местонахождения тела в пространстве, ни от того, как это тело делится на части.
+        </p>
+
+        <p>Величину объёма вычисляют, основываясь на двух простых аксиомах:</p>
+        <ol>
+            <li>Равные тела имеют равные объёмы;</li>
+            <li>Объём тела равен сумме объёмов его отдельных частей</li>
+        </ol>
+        <p>Если появилось чувство дежавю, то это объяснимо: в планиметрии всё то же звучало о площадях равных фигур и о площади составной фигуры.</p>
+
+
+        <p>Тела с равными объёмами называются равновеликими. Добавим немного каши в голову: все равные тела равновелики, но не все равновеликие тела равны. Вот изображения, чтобы разобраться:</p>
+        <h3>Задача: нахождение объема составного многогранника</h3>
+        <img src="images/1.png" alt="" class="vertical_image">
+
+        <p>Разберемся с частью 8 задания ЕГЭ (<a href='https://math-ege.sdamgia.ru/test?theme=140'>раздел</a> на Решу.ЕГЭ). Типичная формулировка задания выглядит так:</p>
+        <p>Найдите объем многогранника, изображенного на рисунке (все двугранные углы многогранника прямые).</p>
+        <p>Что такое двугранные углы? Забегая вперед, скажу очень по-дилетански: двугранный угол - угол между плоскостями (более точное определение будет дано в следующей части). То есть представьте обычную тумбочку или шкаф из IKEA. Угол между соседними стенками этой мебели - прямой, между дном и задней стенкой - прямой и т.д.</p>
+        <p>Алгоритм решения: разбить, согласно аксиоме об объеме, на несколько элементарных фигур (кубов и/или параллелепипедов), найти их объемы отдельно, сложить все найденные объемы.</p>
+        <p>Быстро проговорю, что формула объема параллелепипеда: <span class="code">V=a×b×с</span>, где <span class="code">a,b,c</span> - длины ребер параллелепипеда. Формула объема куба: <span class="code">V=a×a×a</span>, где <span class="code">a</span> - длина ребра куба.</p>
+        <p>Пример разбиения фигуры на несколько:</p>
+        <img src="images/2.png" alt="" class="vertical_image">
+        <p>Объем ближнего к нам параллелепипеда: 2×2×3 = 12. Дальнего левого: 5×6×2 = 60. Дальнего правого: 1×3×5 = 15.</p>
+        <p>Окончательный ответ: <span class="code">89</span></p>
+        <p>Ниже представлены задачи для самостоятельного решения.</p>
+
+        <div id="slider-1" class="slider">
+            <div class="slider__wrapper">
+              <div class="slider__items">
+                <div class="slider__item">
+                    <div class='question_slide'>
+                        <p class="question">Найдите площадь поверхности многогранника, изображенного на рисунке (все двугранные углы прямые).</p>
+                        <img src="images/10.png" alt="" class="vertical_image">
+                        <details close>
+                            <summary>Увидеть ответ</summary>
+                            <p class='answer'>114</p>
+                        </spoiler>
+                    </div>
+                </div>
+                <div class="slider__item">
+                    <div class='question_slide'>
+                        <p class="question">Найдите площадь поверхности многогранника, изображенного на рисунке (все двугранные углы прямые).</p>
+                        <img src="images/11.png" alt="" class="vertical_image">
+                        <details close>
+                            <summary>Увидеть ответ</summary>
+                            <p class='answer'>96</p>
+                        </spoiler>
+                    </div>
+                </div>
+                <div class="slider__item">
+                    <div class='question_slide'>
+                        <p class="question">Найдите площадь поверхности пространственного креста, изображенного на рисунке и составленного из единичных кубов.</p>
+                        <img src="images/9.png" alt="" class="vertical_image">
+                        <details close>
+                            <summary>Увидеть ответ</summary>
+                            <p class='answer'>30</p>
+                        </spoiler>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <a class="slider__control slider__control_prev" href="#" role="button"></a>
+            <a class="slider__control slider__control_next" href="#" role="button"></a>
+        </div>
+
+
+
+
+        <h2>Величины геометрических тел: площадь поверхности.</h2>
+        <p>Площадь поверхности (привет, Википедия)  — аддитивная числовая характеристика поверхности. Чё?
+            Давайте проще и касательно школьной стереометрии. Грубо говоря, <span class="term">площадь поверхности геометрического тела</span>  - сумма площадей всех плоских фигур, ограничивающих данное тело.</p>
+        <p>Например: площадь поверхности куба - это суммарная площадь 6 квадратиков (его граней) , площадь вот этого составного многогранника - суммарная площадь всех его граней: квадратиков, прямоугольников и прочего. </p>
+
+        <h3>Задача: нахожденик площади составного многогранника</h3>
+
+        <p>Разберемся еще с частью 8 задания ЕГЭ (<a href='https://math-ege.sdamgia.ru/test?theme=148'>раздел</a> на Решу.ЕГЭ). Типичная формулировка задания выглядит так:</p>
+        <p>Найдите площадь поверхности многогранника, изображенного на рисунке (все двугранные углы прямые).</p>
+        <img src="images/3.png" alt="" class="vertical_image">
+        <p>Во-первых, что такое двугранные углы? Уже было выше.</p>
+        <p>Во-вторых, какой алгоритм решения? Согласно определению площади составного многогранника, нужно взять каждую из граней фигуры, посчитать её площадь, а затем найти сумму площадей, что и будет итоговым ответом.</p>
+        <p>В чем подвох? Подвох в том, что можно запутаться: посчитать что-то дважы или не посчитать вовсе. Тут поможет элегантный метод: перебирать грани, согласно их расположению. Например: начала берем грани, слева и справа, затем - верхние и нижние, и в последнюю очередь - задние и лицевые.</p>
+        <p>Пример использования метода:</p>
+        <img src="images/4.png" alt="" class="vertical_image">
+        <img src="images/5.png" alt="" class="vertical_image">
+        <img src="images/6.png" alt="" class="vertical_image">
+        <p>Площадь левых/правых: <span class="code">3×5 + 1×2 + 2×2 + 3×3 = 30</span>. Площадь верхних/нижних: <span class="code">5×5 + 5×5= 50</span>. Площадь лицевых/задних: 3×5 + 3×5 = 30</p>
+        <p>Окончательный ответ: <span class="code">110</span></p>
+        <p>Ниже представлены задачи для самостоятельного решения.</p>
+
+        <div id="slider-2" class="slider">
+            <div class="slider__wrapper">
+              <div class="slider__items">
+                <div class="slider__item">
+                    <div class='question_slide'>
+                        <p class="question">Найдите объем многогранника, изображенного на рисунке (все двугранные углы прямые).</p>
+                        <img src="images/7.png" alt="" class="vertical_image">
+                        <details close>
+                            <summary>Увидеть ответ</summary>
+                            <p class='answer'>90</p>
+                        </spoiler>
+                    </div>
+                </div>
+                <div class="slider__item">
+                    <div class='question_slide'>
+                        <p class="question">Найдите объем многогранника, изображенного на рисунке (все двугранные углы прямые).</p>
+                        <img src="images/8.png" alt="" class="vertical_image">
+                        <details close>
+                            <summary>Увидеть ответ</summary>
+                            <p class='answer'>45</p>
+                        </spoiler>
+                    </div>
+                </div>
+                <div class="slider__item">
+                    <div class='question_slide'>
+                        <p class="question">Найдите объем пространственного креста, изображенного на рисунке и составленного из единичных кубов.</p>
+                        <img src="images/9.png" alt="" class="vertical_image">
+                        <details close>
+                            <summary>Увидеть ответ</summary>
+                            <p class='answer'>7</p>
+                        </spoiler>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <a class="slider__control slider__control_prev" href="#" role="button"></a>
+            <a class="slider__control slider__control_next" href="#" role="button"></a>
+        </div>
+        <script>
+            slideShow('.slider2', {
+              isAutoplay: false
+            });
+          </script>
+
+
+        </section>
+        <section class='read-also'>
+            <h2 class="read-also__header">Еще</h2>
+            <ul class="articles__list">
+                <li class="articles__item"   onclick="location.href='../4/index.html';">
+                    <img alt="Фото автора" src="images/autor_dima.png" class="article__autor__image">
+                    <h2 class="article__title">Основы теории вероятностей</h2>
+                    <p class="article__meta">
+                        <span class="article__date">21 сентября</span>
+                        <span class="article__autor">Дима Анфимов</span>
+                    </p>
+                </li>
+                <li class="articles__item"  onclick="location.href='../1/index.html';">
+                    <img alt="Фото автора" src="images/autor_dima.png" class="article__autor__image">
+                    <h2 class="article__title">Стереометрия - часть 1. Аксиомы стереометрии</h2>
+                    <p class="article__meta">
+                        <span class="article__date">20 сентября</span>
+                        <span class="article__autor">Дима Анфимов</span>
+                    </p>
+                </li>
+                <li class="articles__item"  onclick="location.href='../3/index.html';">
+                    <img alt="Фото автора" src="images/autor_dima.png" class="article__autor__image">
+                    <h2 class="article__title">Стереометрия - часть 3. Взаимное расположение точек, прямых, плоскостей.</h2>
+                    <p class="article__meta">
+                        <span class="article__date">21 сентября</span>
+                        <span class="article__autor">Дима Анфимов</span>
+                    </p>
+                </li>
+            </ul>
+        </section>
+
+    </main>
+    <footer>
+        <section class="social">
+            <h2 class="social__header">На связи</h2>
+            <dl class="social__list">
+                <div class="social__item">
+                    <dt class="social__title">Новости и события</dt>
+                    <dd class="social__description">
+                        <a class="social__link" href="https://vk.com/lovesolaristics" aria-label="ВКонтакте">
+                            <svg class="social__icon" aria-hidden="true" width="32" height="32">
+                                <use href="images/sprite.svg#vk"></use>
+                            </svg>
+                        </a>
+                        <a class="social__link" href="https://t.me/anfimov_work" aria-label="Телеграм">
+                            <svg class="social__icon" aria-hidden="true" width="32" height="32">
+                                <use href="images/sprite.svg#telegram"></use>
+                            </svg>
+                        </a>
+                    </dd>
+                </div>
+                <div class="social__item">
+                    <dt class="social__title">Общение и код проектов</dt>
+                    <dd class="social__description">
+                        <a class="social__link" href="https://github.com/LoveSolaristics" aria-label="Слак">
+                            <svg class="social__icon" aria-hidden="true" width="32" height="32">
+                                <use href="images/sprite.svg#slack"></use>
+                            </svg>
+                        </a>
+                        <a class="social__link" href="https://github.com/LoveSolaristics" aria-label="Гитхаб">
+                            <svg class="social__icon" aria-hidden="true" width="32" height="32">
+                                <use href="images/sprite.svg#github"></use>
+                            </svg>
+                        </a>
+                    </dd>
+                </div>
+            </dl>
+        </section>
+        <section class="footer">
+            <h2 class="footer__header">О сайте</h2>
+            <ul class="footer__list">
+                <li class="footer__item">
+                    <a class="footer__link" href>Уроки</a>
+                </li>
+                <li class="footer__item">
+                    <a class="footer__link">Задания</a></li>
+                <li class="footer__item">
+                    <a class="footer__link">Учебник</a>
+                </li>
+                <li class="footer__item">
+                    <a class="footer__link">О проекте</a>
+                </li>
+                <li class="footer__item">
+                    <a class="footer__link" href>Поддержать</a>
+                </li>
+            </ul>
+            <p class="footer__design">
+                Дизайн сайта:
+                <a href class="footer__link">Юлиана Чепракова</a>
+            </p>
+            <p class="footer__copy">
+                Анфимов.exam,
+                <time class="footer__years" datetime="2020">2020</time>
+            </p>
+        </section>
+    </footer>
+    <script src="scripts/slider.js"></script>
+</body>
+</html>
