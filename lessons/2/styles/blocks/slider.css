@@ -60,7 +60,6 @@
 .slider__control {
     position: absolute;
     top: 50%;
-    display: none;
     align-items: center;
     justify-content: center;
     width: 40px;
@@ -99,6 +98,7 @@
     height: 20px;
     background: transparent no-repeat center center;
     background-size: 100% 100%;
+    margin-top: 15px;
 }
 
 .slider__control_prev::before {
