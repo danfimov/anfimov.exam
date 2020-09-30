@@ -1,0 +1,26 @@
+/* Global */
+
+@import 'fonts.css';
+@import 'box-model.css';
+@import 'variables.css';
+
+/* Blocks */
+
+@import 'blocks/grid.css';
+@import 'blocks/page.css';
+
+
+@import 'blocks/header.css';
+@import 'blocks/logo.css';
+@import 'blocks/menu.css';
+
+@import 'blocks/main.css';
+@import 'blocks/article.css';
+@import 'blocks/read_also.css';
+@import 'blocks/slider.css';
+
+
+@import 'blocks/footer.css';
+@import 'blocks/social.css';
+
+
